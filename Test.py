@@ -1,4 +1,4 @@
-field = [['-', '-', '-'] for i in range(3)]
+field = [['-'] * 3 for i in range(3)]
 
 
 def show_field():
