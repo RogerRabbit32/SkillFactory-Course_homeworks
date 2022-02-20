@@ -12,6 +12,7 @@ class CurrencyConverter:
     def convert(quote: str, base: str, amount: str):
         if quote == base:
             raise MyBotException(f'Не имеет смысла переводить {quote} в {quote}.')
+        quote, base = quote.lower(), base.lower()
 
         try:
             quote_symbol = currencies[quote]

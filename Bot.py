@@ -11,7 +11,7 @@ def start_help(message: telebot.types.Message):
     text = 'Для конвертации введите: \n' \
            '<из чего переводим> <во что переводим> <сколько>' \
            '\n \n' \
-           'Например: USD RUB 600 \n \n' \
+           'Например: доллар рубль 600 \n \n' \
            'Посмотреть список доступных валют: /values'
     bot.reply_to(message, text)
 
